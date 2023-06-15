@@ -13,7 +13,7 @@ pygame.init()
 clock = pygame.time.Clock()
 
 # Game Screen
-WIDTH, HEIGHT = 400, 400
+WIDTH, HEIGHT = 900, 500
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Tamendoca")
 
@@ -25,6 +25,7 @@ moving_sprites.add (amendoca)
 FPS = 60
 
 def main():
+    """This ensure the game runs and closes"""
     run = True
     while run:
         clock.tick(FPS)
@@ -34,4 +35,10 @@ def main():
                 pygame.quit()
                 sys.exit
 
+        """This make the drawings appears"""
+        WINDOW.fill((0, 0, 0))
+        moving_sprites.draw(WINDOW)
+        pygame.display.flip()
 
+if __name__ == "__main__":
+    main()
