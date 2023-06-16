@@ -1,9 +1,31 @@
 import pygame,sys
 
-class Amendoca(pygame.sprite.Sprite):
-    def __init__(self, pos_x, pos_y):
-        super().__init__()
-        self.sprites = []
+class Amendoca_Idle(pygame.sprite.Sprite):
+    pass
+
+
+class Amendoca_Bath(pygame.sprite.Sprite):
+    pass
+
+
+class Amendoca_Sleep(pygame.sprite.Sprite):
+    pass
+
+
+class Amendoca_Hunt(pygame.sprite.Sprite):
+    pass
+
+
+class Amendoca_Run(pygame.sprite.Sprite):
+    pass
+
+
+class Amendoca_Playful(pygame.sprite.Sprite):
+    pass
+
+
+class Amendoca_Nervous(pygame.sprite.Sprite):
+    pass
 
 # General setup
 pygame.init()
@@ -16,8 +38,6 @@ pygame.display.set_caption("Tamendoca")
 
 # Sprites and groups
 moving_sprites = pygame.sprite.Group()
-amendoca = Amendoca(100, 100)
-moving_sprites.add (amendoca)
 
 FPS = 60
 
